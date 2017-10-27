@@ -11,7 +11,7 @@ public class LinkedList <T> implements Iterable{
      * Class constructor that sets the first element in the LinkedList
      * @param first The first element of the list
      */
-    public LinkedList(Object first) {
+    public LinkedList(T first) {
         this.first = new Node(first, null);
     }
 
@@ -52,7 +52,7 @@ public class LinkedList <T> implements Iterable{
      * Appends the given item to the tail of the list
      * @param item The item to append
      */
-    public void add(Object item){
+    public void add(T item){
         if(first == null)
             first = new Node(item, null);
         else{
