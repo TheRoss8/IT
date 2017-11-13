@@ -28,6 +28,7 @@ public class Dictionary {
     }
 
     public Lemma search(String word){
-        return (Lemma) BinarySearchTree.search(new Lemma(word, null), dictionary).getInfo();
+        BinarySearchTree out = BinarySearchTree.search(new Lemma(word, null), dictionary);
+        return out == null ? null : (Lemma) out.getInfo();
     }
 }

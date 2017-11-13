@@ -53,8 +53,11 @@ public class BinarySearchTree{
         if(binarySearchTree.info.compareTo(info) == 0)
             return binarySearchTree;
         if(binarySearchTree.info.compareTo(info) < 0)
+            if(binarySearchTree.getRight() != null)
                 return search(info, binarySearchTree.getRight());
-        return search(info, binarySearchTree.getLeft());
+        if(binarySearchTree.getLeft() != null)
+            return search(info, binarySearchTree.getLeft());
+        return null;
     }
 
     public void setRight(BinarySearchTree right) {

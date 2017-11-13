@@ -1,4 +1,4 @@
-import java.io.File;
+
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
@@ -9,11 +9,18 @@ public class DictionaryTest {
     public static void main(String[] args) {
         final String PATH = "dictionary.csv";
         Dictionary dictionary = new Dictionary(PATH);
+        Scanner in = new Scanner(System.in);
         try {
             dictionary.load();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        System.out.println(dictionary.search("House"));
+        while(true){
+            System.out.print("Input the word to search for: ");
+            System.out.println("\n" + dictionary.search(in.nextLine()));
+            System.out.print("\n\tExit? (s/n): ");
+            if(in.nextLine().equalsIgnoreCase("s"))
+                break;
+        }
     }
 }
