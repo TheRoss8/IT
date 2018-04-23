@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <script type="text/javascript" src="validator.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+</head>
+<body>
+<div class="top-line-section"></div>
+<div class="header-bar-section"><h1>University apply</h1></div>
+
+<div class="content-section">
+    <div class="content" align="center">
+        <form>
+            <table>
+                <tr>
+                    <td>Surname and Name: </td>
+                    <td><input title="name" type="text" id="name" maxlength="50" onchange="checkName()" required></td>
+                </tr>
+                <tr>
+                    <td>Gender: </td>
+                    <td>
+                        <input title="gender" type="radio" id="man" value="Man" name="gender" required>Man
+                        <input title="gender" type="radio" id="woman" value="Woman" name="gender" required>Woman
+                    </td>
+                </tr>
+                <tr>
+                    <td>University: </td>
+                    <td>
+                        <select title="university" id="university" required>
+                            <option label="scegli..."></option>
+                            <option>Padova</option>
+                            <option>Padova (Feltre)</option>
+                            <option>Padova (Legnaro)</option>
+                            <option>Padova (Conegliano)</option>
+                            <option>Padova (Rovigo)</option>
+                            <option>Padova (San Sepolcro)</option>
+                            <option>Padova (Treviso)</option>
+                            <option>Padova (Vicenza)</option>
+                            <option>Padova (Thiene)</option>
+                            <option>Udine</option>
+                            <option>Udine (Mestre)</option>
+                            <option>Udine (Gorizia)</option>
+                            <option>Udine (Cormons)</option>
+                            <option>Udine (Pordeone)</option>
+                            <option>Udine (Gemona del Friuli)</option>
+                            <option>Udine (Cividale del Friuli)</option>
+                            <option>Udine (Zelarino)</option>
+                            <option>Ca' Foscari (Venezia)</option>
+                            <option>Ca' Foscari (Mestre)</option>
+                            <option>Ca' Foscari (Oriago di Mira)</option>
+                            <option>Ca' Foscari (Belluno)</option>
+                            <option>Ca' Foscari (Treviso)</option>
+                            <option>IUAV Venezia</option>
+                            <option>IUAV Venezia (San Donà di Piave)</option>
+                            <option>IUAV Venezia (Treviso)</option>
+                            <option>IUAV Venezia (Portogruaro)</option>
+                            <option>Verona</option>
+                            <option>Verona (Rovereto)</option>
+                            <option>Verona (Vicenza)</option>
+                            <option>Verona (Bolzano)</option>
+                            <option>Verona (Trento)</option>
+                            <option>Verona (Legnano)</option>
+                            <option>Verona (Vicenza)</option>
+                            <option>Verona (Ala)</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CAP: </td>
+                    <td><input title="cap" type="text" id="cap" maxlength="5" onchange="capCheck()"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input id="work" type="checkbox" title="work" value="Work" >Hired</td>
+                </tr>
+                <tr>
+                    <td>Work description (only if selected): </td>
+                    <td><input title="desc" type="text" id="desc" maxlength="80"></td>
+                </tr>
+                <tr>
+                    <td><button class="btnRed" type="reset"><span>Reset</span></button></td>
+                    <td><button class="btn" type="submit" onclick="validate()"><span>Submit</span></button></td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>

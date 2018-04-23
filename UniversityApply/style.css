@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif ;
+}
+
+/*------ material design interface ------*/
+.header-bar-section {
+    height: 230px;
+    background: blue;
+    width: available;
+}
+.top-line-section {
+    height: 32px;
+    background: darkblue;
+    width: available;
+}
+.content-section {
+
+    width: available;
+    height: auto;
+    margin: -150px auto -140px auto;
+    position: relative;
+    z-index: 7;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.content {
+    background: white;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.11);
+    padding: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.footer-section {
+    height: 200px;
+    background: blue;
+    position: relative;
+    z-index: 6;
+}
+
+ol {
+    padding: 0 20px;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+#output{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/*------ buttons ------*/
+.btn {
+    position: relative;
+    display: block;
+    margin: 30px auto;
+    padding: 0;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    background-color: #2ecc71;
+    color: #ecf0f1;
+}
+.btnRed{
+    position: relative;
+    display: block;
+    margin: 30px auto;
+    padding: 0;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    color: #ecf0f1;
+    background-color: #e74c3c;
+}
+.btn span {
+    display: block;
+    padding: 12px 24px;
+}
+.btnRed span {
+    display: block;
+    padding: 12px 24px;
+}
