@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University login</title>
+    <script type="text/javascript" src="validator.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+<div class="top-line-section"></div>
+<div class="header-bar-section"><h1>University login</h1></div>
+
+<div class="content-section">
+    <div class="content" align="center">
+        <form>
+            <table>
+                <tr>
+                    <td>Surname: </td>
+                    <td><input title="name" type="text" id="name" maxlength="40"></td>
+                </tr>
+                <tr>
+                    <td>Name: </td>
+                    <td><input title="surname" type="text" id="surname" maxlength="30"></td>
+                </tr>
+                <tr>
+                    <td>Code: </td>
+                    <td><input title="code" type="text" id="code" maxlength="12"></td>
+                </tr>
+                <tr>
+                    <td>Email: </td>
+                    <td><input title="mail" type="email" id="mail" maxlength="30"></td>
+                </tr>
+                <tr>
+                    <td>Region: </td>
+                    <td>
+                        <select title="region" id="region">
+                            <option label="scegli..."></option>
+                            <option>Abruzzo</option>
+                            <option>Basilicata</option>
+                            <option>Calabria</option>
+                            <option>Campania</option>
+                            <option>Emilia-Romagna</option>
+                            <option>Friuli Venezia Giulia</option>
+                            <option>Lazio</option>
+                            <option>Liguria</option>
+                            <option>Lombardia</option>
+                            <option>Marche</option>
+                            <option>Molise</option>
+                            <option>Piemonte</option>
+                            <option>Puglia</option>
+                            <option>Sardegna</option>
+                            <option>Sicilia</option>
+                            <option>Toscana</option>
+                            <option>Trentino Sud Tirolo</option>
+                            <option>Umbria</option>
+                            <option>Valle d’Aosta</option>
+                            <option>Veneto</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mobile phone: </td>
+                    <td><input title="phone" type="tel" id="phone" maxlength="15"></td>
+                </tr>
+                <tr>
+                    <td>Special request: </td>
+                    <td><textarea title="request" rows="12" cols="60"></textarea></td>
+                </tr>
+                <tr>
+                    <td><button class="btnRed" type="reset"><span>Reset</span></button></td>
+                    <td><button class="btn" type="submit" onclick="validate()"><span>Submit</span></button></td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>
